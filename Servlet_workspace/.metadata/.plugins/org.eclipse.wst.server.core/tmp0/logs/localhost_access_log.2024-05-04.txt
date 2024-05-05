@@ -1,0 +1,16 @@
+127.0.0.1 - - [04/May/2024:10:20:09 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [04/May/2024:10:20:09 +0530] "GET /ImplicitObjects/ HTTP/1.1" 404 772
+127.0.0.1 - - [04/May/2024:10:20:42 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [04/May/2024:10:20:43 +0530] "GET /ImplicitObjects/ HTTP/1.1" 404 772
+0:0:0:0:0:0:0:1 - - [04/May/2024:10:21:00 +0530] "GET /ImplicitObjects/ HTTP/1.1" 404 772
+127.0.0.1 - - [04/May/2024:10:21:27 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [04/May/2024:10:21:27 +0530] "GET /ImplicitObjects/ HTTP/1.1" 404 772
+127.0.0.1 - - [04/May/2024:10:22:49 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [04/May/2024:10:22:51 +0530] "GET /ImplicitObjects/ HTTP/1.1" 200 392
+0:0:0:0:0:0:0:1 - - [04/May/2024:10:22:56 +0530] "GET /ImplicitObjects/IndexResponse.jsp?name=Amruta HTTP/1.1" 200 168
+0:0:0:0:0:0:0:1 - - [04/May/2024:10:23:11 +0530] "GET /ImplicitObjects/IndexResponse.jsp?name=Amruta HTTP/1.1" 200 167
+0:0:0:0:0:0:0:1 - - [04/May/2024:10:23:11 +0530] "GET /ImplicitObjects/IndexResponse.jsp?name=Amruta HTTP/1.1" 200 167
+0:0:0:0:0:0:0:1 - - [04/May/2024:10:23:11 +0530] "GET /ImplicitObjects/IndexResponse.jsp?name=Amruta HTTP/1.1" 200 167
+127.0.0.1 - - [04/May/2024:13:34:14 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [04/May/2024:13:34:14 +0530] "GET /ImplicitObjParameterSetting/ HTTP/1.1" 404 784
+0:0:0:0:0:0:0:1 - - [04/May/2024:13:34:18 +0530] "GET /ImplicitObjParameterSetting/add HTTP/1.1" 200 158

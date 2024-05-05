@@ -1,0 +1,56 @@
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import org.eclipse.jdt.internal.compiler.ast.InstanceOfExpression;
+
+import jakarta.servlet.GenericServlet;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class LoginServlet extends HttpServlet {
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		System.out.println("In Get method class!!");
+		String rs = "<button>GET button</button>";
+		resp.getWriter().write(rs);
+	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		System.out.println("In post method class!!");
+		String rs = "<button>POST button</button>";
+		resp.getWriter().write(rs);
+	}
+
+//	@Override
+//	public void service(ServletRequest arg0, ServletResponse arg1) throws ServletException, IOException {
+//		// TODO Auto-generated method stub
+//		System.out.println("LoginServelet called!!");
+//		HttpServletRequest request = (HttpServletRequest)arg0;
+//		
+//		String ans = request.getMethod();
+//		String response = "";
+//		if(ans.equals("POST")) {
+//			response = "<button>POST button</button>";
+//		}
+//		else if(ans.equals("GET")) {
+//			response = "<button>GET button</button>";
+//		}
+//		
+//		System.out.println(arg0 instanceof HttpServletRequest);
+//		
+//		PrintWriter writer = arg1.getWriter();
+//		
+//		writer.write(response);
+//		writer.flush();
+//		writer.close();
+//	}
+
+}

@@ -1,0 +1,35 @@
+import java.io.IOException;
+import java.util.Random;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class CreditCard extends HttpServlet{
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		resp.getWriter().write("<ul>");
+		for(int i=0;i<10;i++) {
+			int start = generateRandomNumber(4);
+			int end = generateRandomNumber(4);
+			resp.getWriter().write("<li>"+start+" **** ***** "+end+"</li>");
+		}
+		resp.getWriter().write("</ul>");
+	}
+	
+	public static int generateRandomNumber(int digits) {
+        if (digits <= 0) {
+            throw new IllegalArgumentException("Number of digits must be greater than zero");
+        }
+
+        int min = (int) Math.pow(10, digits - 1);
+        int max = (int) Math.pow(10, digits) - 1;
+
+        Random random = new Random();
+        return random.nextInt(max - min + 1) + min;
+    }
+	
+}

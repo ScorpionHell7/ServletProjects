@@ -1,0 +1,17 @@
+INDEX VERSION 1.134
+C:\Servlet\Servlet_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3601633316.index
+\AttribuesExample\src\main\java
+C:\Servlet\Servlet_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2512525384.index
+\HelloWorld1\src\main\java
+C:\Servlet\Servlet_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3669391441.index
+\AttribuesExample\src\main\java
+C:\Servlet\Servlet_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1298265891.index
+\HelloWorld1\src\main\java
+C:\Servlet\Servlet_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2073362567.index
+\Parameters\src\main\java
+C:\Servlet\Servlet_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1928006728.index
+\ImplicitObjParameterSetting\src\main\java
+C:\Servlet\Servlet_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2469348628.index
+\Contact_sessions\src\main\java
+C:\Servlet\Servlet_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1099171266.index
+\ImplicitObjects\src\main\java

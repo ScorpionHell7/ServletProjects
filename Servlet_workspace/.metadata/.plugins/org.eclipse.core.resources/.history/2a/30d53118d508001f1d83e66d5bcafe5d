@@ -1,0 +1,32 @@
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.HashMap;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+public class SubmitAction extends HttpServlet {
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String name = req.getParameter("name");
+		String phone = req.getParameter("phone");
+		HashMap<String,String> hm = new HashMap<>();
+		hm.put(name, phone);
+		HttpSession session = req.getSession();
+		session.setAttribute("contact", hm);
+		if(session == null) {
+			hm = new HashMap<>();
+			hm.put(name, phone);
+		}
+		else {
+			hm.put(name, phone);
+		}
+		
+		req.getRequestDispatcher("index.jsp").forward(req, resp);
+	}
+
+}
