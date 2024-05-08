@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id = "st1" class = "com.becoder.refs.Student">
+    <property name="name" value ="Tejas"/>
+    <property name="address" ref ="ad"/>
+    </bean>
+
+    <bean id = "ad" class = "com.becoder.refs.Address">
+    <property name="id" value ="101"/>
+    <property name="city" value ="Mumbai"/>
+    </bean>
+    
+    <bean id = "st2" class = "com.becoder.refs.Student" p:name="Amruta" p:address-ref="ad2"></bean>
+    <bean id = "ad2" class = "com.becoder.refs.Address" p:id="102" p:city="Thane"></bean>
+</beans>

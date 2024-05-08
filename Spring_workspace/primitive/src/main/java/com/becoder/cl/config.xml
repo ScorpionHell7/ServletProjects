@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id = "st1" class = "com.becoder.cl.Student">
+    <constructor-arg value = "101" type = "int" index = "0"/>
+    <constructor-arg value = "Tejas" type = "String" index = "1"/>
+    <constructor-arg value = "place" type = "String" index = "2"/>
+    <constructor-arg index = "3">
+    <list>
+    <value>java</value>
+    <value>python</value>
+    </list>
+    </constructor-arg>
+    <constructor-arg ref = "ad" index = "4"/>
+    </bean>
+
+    <bean id = "ad" class = "com.becoder.cl.Address">
+    <constructor-arg value = "Mumbai"/>
+    <constructor-arg value = "Maharashtra"/>
+    </bean>
+    
+</beans>
