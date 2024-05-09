@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:p="http://www.springframework.org/schema/p"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+		
+		<context:annotation-config/>
+		<bean name = "add1" class = "com.becoder.SpringAutowire.annot.Address">
+		<property name="city" value = "Pune"/>
+		<property name="state" value = "Maharashtra"/>
+		</bean>
+		
+		<bean name = "address" class = "com.becoder.SpringAutowire.annot.Address">
+		<property name="city" value = "Mumbai"/>
+		<property name="state" value = "Maharashtra"/>
+		</bean>
+		
+		
+		<!-- <bean name ="st1" class="com.becoder.SpringAutowire.xml.Student" autowire="byName">
+		</bean> -->
+		<!-- <bean name = "st1" class = "com.becoder.SpringAutowire.xml.Student" autowire="byType">
+		</bean> -->
+		<bean name = "st1" class = "com.becoder.SpringAutowire.annot.Student">
+		</bean>
+
+	</beans>

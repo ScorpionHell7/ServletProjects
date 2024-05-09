@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:p="http://www.springframework.org/schema/p"
+		xmlns:util="http://www.springframework.org/schema/util"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+		
+		<!--  how to change scope in xml beans below is the way-->
+		<!-- <bean class = "com.becoder.SpringAutowire.Sterotype.Employee" name = "emp" scope = "prototype">
+		</bean> -->
+		
+		<context:component-scan base-package="com.becoder.SpringAutowire.Sterotype"/>
+		<util:list list-class="java.util.ArrayList" id = "ad">
+		<value>India</value>
+		<value>UK</value>
+		<value>USA</value>
+		</util:list>
+		
+	</beans>
