@@ -20,4 +20,8 @@
 		</property>
 		</bean>
 		
+		<bean name = "stDao" class = "com.becoder.SpringJDBC.dao.StudentImpl">
+		<property name="jdbctemplate" ref="jdbcTemplate"/>
+		</bean>
+		
 	</beans>
