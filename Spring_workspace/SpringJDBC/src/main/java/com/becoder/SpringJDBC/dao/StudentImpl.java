@@ -7,21 +7,26 @@ import java.util.List;
 import javax.swing.tree.RowMapper;
 import javax.swing.tree.TreePath;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.*;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
 
+
+@Component("stDao")
 public class StudentImpl implements StudentInterface {
+	@Autowired
 	private JdbcTemplate jdbctemplate;
 	
 	
 	
-	public JdbcTemplate getJdbctemplate() {
-		return jdbctemplate;
-	}
-
-	public void setJdbctemplate(JdbcTemplate jdbctemplate) {
-		this.jdbctemplate = jdbctemplate;
-	}
+//	public JdbcTemplate getJdbctemplate() {
+//		return jdbctemplate;
+//	}
+//
+//	public void setJdbctemplate(JdbcTemplate jdbctemplate) {
+//		this.jdbctemplate = jdbctemplate;
+//	}
 
 	@Override
 	public int insertStudent(Student s) {
